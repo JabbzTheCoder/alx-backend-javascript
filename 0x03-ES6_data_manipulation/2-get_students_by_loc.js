@@ -1,10 +1,5 @@
-const getStudentsByLocation = (stdents, city) =>{
-    let filtered_students = [];
-
-    filtered_students = stdents.filter(student => student.location === city);
-
-    return filtered_students;
-
+function getStudentsByLocation(students, city) {
+  return students.filter((student) => student.location === city);
 }
 
 export default getStudentsByLocation;

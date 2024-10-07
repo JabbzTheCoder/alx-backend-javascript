@@ -1,11 +1,3 @@
-import getListStudentIds from "./1-get_list_student_ids.js";
-
-const getStudentIdsSum = (stdntLst) =>{
-    let ids = getListStudentIds(stdntLst);
-
-    const sum = ids.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-
-    return sum;
-}
+const getStudentIdsSum = (students) => students.reduce((preVal, cur) => preVal + cur.id, 0);
 
 export default getStudentIdsSum;
