@@ -16,4 +16,4 @@ const getListStudents = () => [
     },
   ];
   
-  export default getListStudents;
+export default getListStudents;
